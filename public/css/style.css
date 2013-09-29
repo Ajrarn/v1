@@ -53,3 +53,22 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+header[role="banner"], footer[role="contentinfo"] {
+  width: 100%;
+  display: block;
+}
+
+nav[role="navigation"] {
+  width: 25%;
+  float: left;
+}
+
+.main-content {
+  width: 70%;
+  float: right;
+}
+
+footer[role="contentinfo"] {
+  clear: both;
+}

@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  ng-app> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,7 @@
     <footer>
         <p>Le pied de page</p>
     </footer>
-    <form>
+    <div class="main-content">
         <select name="temps">
             <optgroup label="Présent">
                 <option value="présent">Présent</option>
@@ -41,9 +41,12 @@
                 <option value="passCompose">Passé Composé</option>
             </optgroup>
         </select>
-        <check
-    </form>
+        <label>Name:</label>
+        <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <hr>
+        <h1>Hello {{yourName}}!</h1>
+    </div>
 
-
+    <script src="js/vendor/angular-1.0.8.js"></script>
 </body>
 </html>
