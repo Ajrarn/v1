@@ -17,7 +17,7 @@
 </head>
 <body>
     <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">Vous utiliez un navigateur <strong>obsolète</strong>. S'il vous plait <a href="http://browsehappy.com/">Mettez le à jour</a> pour améliorer votre expérience.</p>
     <![endif]-->
 
     <header>
@@ -28,11 +28,14 @@
             </ul>
         </nav>
     </header>
-    <footer>
-        <p>Le pied de page</p>
-    </footer>
     <div class="main-content">
-        <select name="temps">
+        Verbe : <select name="temps">
+            <option value="etre">Être</option>
+            <option value="avoir">Avoir</option>
+            <option value="faire">Faire</option>
+            <option value="dire">Dire</option>
+        </select>
+        Temps : <select name="temps">
             <optgroup label="Présent">
                 <option value="présent">Présent</option>
             </optgroup>
@@ -41,11 +44,43 @@
                 <option value="passCompose">Passé Composé</option>
             </optgroup>
         </select>
+        <fieldset>
+            <legend>Sujet</legend>
+            <input type="checkbox" name="sujet" id="Je">
+                <label for="Je">Je</label>
+            </input>
+            <input type="checkbox" name="sujet" id="Tu">
+                <label for="Tu">Tu</label>
+            </input>
+            <input type="checkbox" name="sujet" id="Il">
+                <label for="Il">Il</label>
+            </input>
+            <input type="checkbox" name="sujet" id="Elle">
+                <label for="Elle">Elle</label>
+            </input>
+            <input type="checkbox" name="sujet" id="Nous">
+                <label for="Nous">Nous</label>
+            </input>
+            <input type="checkbox" name="sujet" id="Vous">
+                <label for="Vous">Vous</label>
+            </input>
+            <input type="checkbox" name="sujet" id="Ils">
+                <label for="Ils">Ils</label>
+            </input>
+            <input type="checkbox" name="sujet" id="Elles">
+                <label for="Elles">Elles</label>
+            </input>
+        </fieldset>
+
         <label>Name:</label>
         <input type="text" ng-model="yourName" placeholder="Enter a name here">
         <hr>
         <h1>Hello {{yourName}}!</h1>
     </div>
+
+    <footer>
+        <p>Le pied de page</p>
+    </footer>
 
     <script src="js/vendor/angular-1.0.8.js"></script>
 </body>
