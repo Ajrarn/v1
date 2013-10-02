@@ -1,6 +1,12 @@
 
+// Les couleurs
+$color1: #0b7e9d; //Bleu Clair
+$color2:#12c7f4; //Bleu très clair
+$color3: #d8ddb2; //Blanc cassé
+
+
+
 // Variables pour la grille dynamique Susy
-@import "susy";
 $total-columns : 12;  //12 collonnes pour la grille
 $column-width : 5em;  //largeur de chaque colonnes
 $gutter-width : 1em;  // espace entre les colonnes

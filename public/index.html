@@ -22,7 +22,7 @@
 
     <header role="banner">
         <div class="inner-header">
-            Conjugaisons
+            <h1>Conjugaisons</h1>
         </div> <!-- /.inner-header -->
     </header>
     <div class = "inner-content">
@@ -33,15 +33,15 @@
             </ul>
         </nav>
         <div role="main" class="main-content">
-            <p>Score : <output>250</output> </p>
-            <p>Question : <output>allais</output></p>
-            <p>Verbe : <select name="temps">
+            <p><label for="score">Score : </label><output id="score">250</output> </p>
+            <p><label for="question">Question : </label><output id="question">allais</output></p>
+            <p><label for="verbe">Verbe : </label><select id="verbe" name="verbe">
                 <option value="etre">Être</option>
                 <option value="avoir">Avoir</option>
                 <option value="faire">Faire</option>
                 <option value="dire">Dire</option>
             </select></p>
-            <p>Temps : <select name="temps">
+            <p><label for="temps">Temps : </label><select id="temps" name="temps">
                 <optgroup label="Présent">
                     <option value="présent">Présent</option>
                 </optgroup>
@@ -50,7 +50,7 @@
                     <option value="passCompose">Passé Composé</option>
                 </optgroup>
             </select></p>
-            <p><fieldset>
+            <fieldset>
                 <legend>Sujet</legend>
                 <input type="checkbox" name="sujet" id="Je">
                     <label for="Je">Je</label>
@@ -76,7 +76,7 @@
                 <input type="checkbox" name="sujet" id="Elles">
                     <label for="Elles">Elles</label>
                 </input>
-            </fieldset></p>
+            </fieldset>
 
             <p><label>Name:</label>
             <input type="text" ng-model="yourName" placeholder="Enter a name here">
@@ -84,11 +84,11 @@
         </div>
     </div>
 
-    <footer>
+    <!--footer>
         <div class = "inner-footer">
             <p>Le pied de page</p>
         </div>
-    </footer>
+    </footer-->
 
     <script src="js/vendor/angular-1.0.8.js"></script>
 </body>
