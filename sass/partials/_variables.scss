@@ -1,0 +1,11 @@
+
+// Variables pour la grille dynamique Susy
+@import "susy";
+$total-columns : 12;  //12 collonnes pour la grille
+$column-width : 5em;  //largeur de chaque colonnes
+$gutter-width : 1em;  // espace entre les colonnes
+$grid-padding : $gutter-width;  // espace autour de la grille
+
+// Breakpoints
+$M:47em;
+$L:75em;

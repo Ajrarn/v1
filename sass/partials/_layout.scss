@@ -1,14 +1,23 @@
+//Toute classe commençant par inner utilise la grille
+[class^=inner]{
+  @include container;
+  @include susy-grid-background;
+}
+
+
 header[role="banner"],footer[role="contentinfo"] {
   width: 100%;
   display: block;
 }
 nav[role="navigation"] {
-  width: 25%;
-  float: left;
+  @include at-breakpoint($M){
+    @include span-columns(3,12);
+  }
 }
 .main-content {
-  width: 70%;
-  float: right;
+  @include at-breakpoint($M){
+    @include span-columns(9 omega,12);
+  }
 }
 footer {
   clear: both;

@@ -17,69 +17,77 @@
 </head>
 <body>
     <!--[if lt IE 7]>
-    <p class="browsehappy">Vous utiliez un navigateur <strong>obsolète</strong>. S'il vous plait <a href="http://browsehappy.com/">Mettez le à jour</a> pour améliorer votre expérience.</p>
+    <p class="browsehappy">Vous utilisez un navigateur <strong>obsolète</strong>. S'il vous plait <a href="http://browsehappy.com/">Mettez le à jour</a> pour améliorer votre expérience.</p>
     <![endif]-->
 
-    <header>
-        <nav>
+    <header role="banner">
+        <div class="inner-header">
+            Conjugaisons
+        </div> <!-- /.inner-header -->
+    </header>
+    <div class = "inner-content">
+        <nav role="navigation">
             <ul>
                 <li><a href="/">Conjugaisons</a></li>
                 <li><a href="/">La même chose</a></li>
             </ul>
         </nav>
-    </header>
-    <div class="main-content">
-        Verbe : <select name="temps">
-            <option value="etre">Être</option>
-            <option value="avoir">Avoir</option>
-            <option value="faire">Faire</option>
-            <option value="dire">Dire</option>
-        </select>
-        Temps : <select name="temps">
-            <optgroup label="Présent">
-                <option value="présent">Présent</option>
-            </optgroup>
-            <optgroup label="Passé">
-                <option value="imparfait">Imparfait</option>
-                <option value="passCompose">Passé Composé</option>
-            </optgroup>
-        </select>
-        <fieldset>
-            <legend>Sujet</legend>
-            <input type="checkbox" name="sujet" id="Je">
-                <label for="Je">Je</label>
-            </input>
-            <input type="checkbox" name="sujet" id="Tu">
-                <label for="Tu">Tu</label>
-            </input>
-            <input type="checkbox" name="sujet" id="Il">
-                <label for="Il">Il</label>
-            </input>
-            <input type="checkbox" name="sujet" id="Elle">
-                <label for="Elle">Elle</label>
-            </input>
-            <input type="checkbox" name="sujet" id="Nous">
-                <label for="Nous">Nous</label>
-            </input>
-            <input type="checkbox" name="sujet" id="Vous">
-                <label for="Vous">Vous</label>
-            </input>
-            <input type="checkbox" name="sujet" id="Ils">
-                <label for="Ils">Ils</label>
-            </input>
-            <input type="checkbox" name="sujet" id="Elles">
-                <label for="Elles">Elles</label>
-            </input>
-        </fieldset>
+        <div role="main" class="main-content">
+            <p>Score : <output>250</output> </p>
+            <p>Question : <output>allais</output></p>
+            <p>Verbe : <select name="temps">
+                <option value="etre">Être</option>
+                <option value="avoir">Avoir</option>
+                <option value="faire">Faire</option>
+                <option value="dire">Dire</option>
+            </select></p>
+            <p>Temps : <select name="temps">
+                <optgroup label="Présent">
+                    <option value="présent">Présent</option>
+                </optgroup>
+                <optgroup label="Passé">
+                    <option value="imparfait">Imparfait</option>
+                    <option value="passCompose">Passé Composé</option>
+                </optgroup>
+            </select></p>
+            <p><fieldset>
+                <legend>Sujet</legend>
+                <input type="checkbox" name="sujet" id="Je">
+                    <label for="Je">Je</label>
+                </input>
+                <input type="checkbox" name="sujet" id="Tu">
+                    <label for="Tu">Tu</label>
+                </input>
+                <input type="checkbox" name="sujet" id="Il">
+                    <label for="Il">Il</label>
+                </input>
+                <input type="checkbox" name="sujet" id="Elle">
+                    <label for="Elle">Elle</label>
+                </input>
+                <input type="checkbox" name="sujet" id="Nous">
+                    <label for="Nous">Nous</label>
+                </input>
+                <input type="checkbox" name="sujet" id="Vous">
+                    <label for="Vous">Vous</label>
+                </input>
+                <input type="checkbox" name="sujet" id="Ils">
+                    <label for="Ils">Ils</label>
+                </input>
+                <input type="checkbox" name="sujet" id="Elles">
+                    <label for="Elles">Elles</label>
+                </input>
+            </fieldset></p>
 
-        <label>Name:</label>
-        <input type="text" ng-model="yourName" placeholder="Enter a name here">
-        <hr>
-        <h1>Hello {{yourName}}!</h1>
+            <p><label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <h1>Hello {{yourName}}!</h1></p>
+        </div>
     </div>
 
     <footer>
-        <p>Le pied de page</p>
+        <div class = "inner-footer">
+            <p>Le pied de page</p>
+        </div>
     </footer>
 
     <script src="js/vendor/angular-1.0.8.js"></script>
