@@ -51,7 +51,7 @@
                 </optgroup>
             </select></p>
             <fieldset>
-                <legend>Sujet</legend>
+                <label>Sujet : </label>
                 <input type="checkbox" name="sujet" id="Je">
                     <label for="Je">Je</label>
                 </input>
@@ -77,10 +77,16 @@
                     <label for="Elles">Elles</label>
                 </input>
             </fieldset>
+            <p><label>Chrono : </label>
+                <meter low="0" high="180" max="500" value="450" optimum="250">450</meter>
+            </p>
+            <p>
+                <button>Start</button>
+            </p>
 
-            <p><label>Name:</label>
+            <!--<p><label>Name:</label> -------Angular proof
             <input type="text" ng-model="yourName" placeholder="Enter a name here">
-            <h1>Hello {{yourName}}!</h1></p>
+            <h1>Hello {{yourName}}!</h1></p>-->
         </div>
     </div>
 

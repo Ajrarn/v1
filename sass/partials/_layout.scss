@@ -1,7 +1,7 @@
 body{
   font-size: 1.2em;
   //background: linear-gradient($color1, $color2);
-  @include background-image(linear-gradient(left top, $color1, $color2));
+  //@include background-image(linear-gradient(left top, $color1, $color2));
 }
 
 
@@ -15,7 +15,11 @@ body{
 
 header[role="banner"],footer[role="contentinfo"] {
   width: 100%;
+  height: 40px;
   display: block;
+  background:$color3;
+  @include border-radius(4px, 4px);
+  @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);
 }
 nav[role="navigation"] {
   @include at-breakpoint($M){
@@ -38,6 +42,17 @@ nav[role="navigation"] {
     border-color:$color1;
     @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);
   }
+}
+
+select{
+  font-size: 1em;
+}
+meter{
+  width:100%
+}
+
+button{
+  @include sassy-button("glass", 10px, 19px, #4ba3cc)
 }
 
 
