@@ -1,0 +1,21 @@
+body{
+  font-size: 1.2em;
+
+  line-height:1.4;
+
+  font-family:"quicksandregular","HelveticaNeue-Light","Helvetica Neue", Helvetica, Arial,sans-serif;
+
+  .no-fontface & {
+    font-size: 1.2em;
+  }
+
+  background: {
+    image: image-url("carreauCahier.png");
+    repeat: repeat;
+  }
+
+
+
+  //background: linear-gradient($color1, $color2);
+  //@include background-image(linear-gradient(left top, $color1, $color2));
+}

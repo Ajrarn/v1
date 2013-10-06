@@ -1,10 +1,3 @@
-body{
-  font-size: 1.2em;
-  //background: linear-gradient($color1, $color2);
-  //@include background-image(linear-gradient(left top, $color1, $color2));
-}
-
-
 
 //Toute classe commençant par inner utilise la grille
 [class^=inner]{
@@ -34,13 +27,13 @@ nav[role="navigation"] {
 
   p,fieldset{
     margin:.5em 25px;
-    background:$color3;
     padding:10px;
-    //border-radius:3px;
-    @include border-radius(4px, 4px);
-    border-style:solid;
+    //background:$color3;
+    //@include border-radius(4px, 4px);
+    @include liftedCorners;
+    /*border-style:solid;
     border-color:$color1;
-    @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);
+    @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);*/
   }
 }
 

@@ -1,0 +1,22 @@
+@mixin liftedCorners($backgroundcolor:#fff){
+  background: #fff;
+  @include border-radius(4px);
+  @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);
+
+  &::before, &::after{
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 100px;
+    @include box-shadow( 0 15px 10px rgba(0, 0, 0, 0.7));
+    /*@include transform(rotate(-3deg));
+    content: "";
+    position: absolute;
+    z-index: -2;
+    right: 10px;
+    left: auto; */
+  }
+
+}
