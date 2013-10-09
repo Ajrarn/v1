@@ -10,13 +10,48 @@ header[role="banner"],footer[role="contentinfo"] {
   width: 100%;
   height: 40px;
   display: block;
-  background:$color3;
-  @include border-radius(4px, 4px);
+  background: #fff;
+  @include border-radius(4px);
   @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);
+  &::before, &::after{
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 100px;
+    @include box-shadow( 0 15px 10px rgba(0, 0, 0, 0.7));
+  }
 }
 nav[role="navigation"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+
+  & li{
+    @include sassy-button("shiny", 0px, 19px, $colorP);
+    margin:0px;
+  }
+
+  & a{
+    text-decoration:none;
+  }
+
+
+
   @include at-breakpoint($M){
+
+    position:static;
+    top:0px;
+    bottom:auto;
+
+
     @include span-columns(3,12);
+    & li{
+
+      display:block;
+      margin:5px;
+    }
   }
 }
 .main-content {
@@ -28,12 +63,21 @@ nav[role="navigation"] {
   p,fieldset{
     margin:.5em 25px;
     padding:10px;
-    //background:$color3;
-    //@include border-radius(4px, 4px);
-    @include liftedCorners;
-    /*border-style:solid;
-    border-color:$color1;
-    @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);*/
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: #fff;
+    @include border-radius(4px);
+    @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);
+    &::before, &::after{
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      height: 20%;
+      max-width: 300px;
+      max-height: 100px;
+      @include box-shadow( 0 15px 10px rgba(0, 0, 0, 0.7));
+    }
   }
 }
 
@@ -45,7 +89,7 @@ meter{
 }
 
 button{
-  @include sassy-button("glass", 10px, 19px, #4ba3cc)
+  @include sassy-button("shiny", 10px, 19px, $colorS2)
 }
 
 
